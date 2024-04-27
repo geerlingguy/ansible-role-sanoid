@@ -10,13 +10,6 @@
     state: started
     enabled: true
 
-# TODO: Necessary?
-# - name: Enable sanoid prune service.
-#   ansible.builtin.systemd:
-#     name: sanoid-prune.service
-#     masked: no
-#     enabled: yes
-
 - name: Ensure Sanoid configuration directory exists.
   file:
     path: /etc/sanoid
