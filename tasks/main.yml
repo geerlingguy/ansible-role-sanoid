@@ -4,8 +4,27 @@
     name: sanoid
     state: present
 
-# TODO:
-# sudo systemctl enable --now sanoid.timer
+- name: Enable Sanoid timer unit.
+  ansible.builtin.systemd_service:
+    name: sanoid.timer
+    state: started
+    enabled: true
 
-# TODO:
-# TODO configure
+# TODO: Necessary?
+# - name: Enable sanoid prune service.
+#   ansible.builtin.systemd:
+#     name: sanoid-prune.service
+#     masked: no
+#     enabled: yes
+
+- name: Ensure Sanoid configuration directory exists.
+  file:
+    path: /etc/sanoid
+    state: directory
+    mode: 0755
+
+- name: Configure Sanoid.
+  copy:
+    dest: /etc/sanoid/sanoid.conf
+    content: "{{ sanoid_conf }}"
+    mode: 0644
