@@ -1,0 +1,27 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: geerlingguy
+  description: Sanoid and Syncoid for ZFS snapshot and backup management.
+  company: "Midwestern Mac, LLC"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.16
+  platforms:
+    - name: Fedora
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - system
+    - zfs
+    - filesystem
+    - snapshots
+    - replication
+    - backup
+    - automation

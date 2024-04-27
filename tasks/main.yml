@@ -1,0 +1,11 @@
+---
+- name: Install Sanoid.
+  ansible.builtin.package:
+    name: sanoid
+    state: present
+
+# TODO:
+# sudo systemctl enable --now sanoid.timer
+
+# TODO:
+# TODO configure
