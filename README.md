@@ -1,6 +1,6 @@
 # Ansible Role: Sanoid
 
-[![CI](https://github.com/geerlingguy/ansible-role-sanoid/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-sanoid/actions?query=workflow%3ACI)
+[![CI](https://github.com/geerlingguy/ansible-role-sanoid/actions/workflows/ci.yml/badge.svg)](https://github.com/geerlingguy/ansible-role-sanoid/actions/workflows/ci.yml)
 
 An Ansible Role that installs [Sanoid and Syncoid](https://github.com/jimsalterjrs/sanoid) on Linux servers for ZFS snapshot, backup, and replication management.
 
